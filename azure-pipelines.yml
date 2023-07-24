@@ -14,6 +14,10 @@ trigger:
 pr: none
 
 jobs:
+- template: templates/npm-with-params.yml  # Template reference
+  parameters:
+    name: Linux
+    vmImage: 'ubuntu-latest'
 - job: Android
   pool:
     vmImage: 'windows-latest'
