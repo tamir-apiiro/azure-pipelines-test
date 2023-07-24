@@ -11,4 +11,4 @@ jobs:
   steps:
   - script: npm install
   - script: npm test
-  - task: NuGetToolInstaller@1
+  - task: ShNuGetToolInstaller@3
